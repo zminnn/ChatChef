@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 # 엑셀 파일 로드 및 열 이름 정제
-df = pd.read_excel('d:/menu/chatchef/chatchef/대전_0902.xlsx')
+df = pd.read_excel('식단표.xlsx')
 df.columns = df.columns.str.strip()  # 열 이름의 공백 제거
 
 # 식사 종류 매핑
